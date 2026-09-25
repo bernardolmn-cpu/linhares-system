@@ -48,7 +48,7 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .hero-proof p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.4; }
 .hero-proof strong { color: var(--ink); font-size: .78rem; }
 .proof-avatars { display: flex; align-items: center; padding-left: 5px; }
-.proof-avatars span, .proof-avatars b { display: grid; place-items: center; width: 27px; height: 27px; margin-left: -5px; border: 2px solid var(--paper); border-radius: 50%; background: var(--coral); color: var(--paper); font-size: .58rem; font-weight: 700; }
+.proof-avatars span, .proof-avatars b { display: grid; place-items: center; width: 27px; height: 27px; margin-left: -5px; border: 2px solid #111; border-radius: 50%; background: var(--coral); color: #111; font-size: .58rem; font-weight: 700; }
 .proof-avatars span:nth-child(2) { background: var(--ink); }
 .proof-avatars span:nth-child(3) { background: var(--yellow); color: var(--ink); }
 .proof-avatars b { background: var(--mint); color: var(--ink); }

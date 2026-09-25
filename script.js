@@ -5,10 +5,11 @@ form.addEventListener('submit', (event) => {
   const name = form.elements.name.value.trim();
   const phone = form.elements.phone.value.trim();
   const email = form.elements.email.value.trim();
+  const consumption = Number(form.elements.consumption_kwh.value);
 
-  if (!name || !phone || !email) {
+  if (!name || !phone || !email || !consumption || consumption < 1) {
     event.preventDefault();
-    status.textContent = 'Preencha seu nome, WhatsApp e e-mail para continuar.';
+    status.textContent = 'Preencha todos os campos, incluindo o consumo mensal em kWh.';
     return;
   }
 
