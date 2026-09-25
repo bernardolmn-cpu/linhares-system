@@ -54,21 +54,16 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .proof-avatars b { background: var(--mint); color: var(--ink); }
 
 .hero-art { position: relative; height: 500px; overflow: hidden; background: var(--mint); box-shadow: var(--shadow); animation: rise .7s .15s ease both; }
-.hero-art::before { content: ''; position: absolute; inset: 0; background: linear-gradient(155deg, transparent 54%, rgba(255,255,255,.23) 54.2%, rgba(255,255,255,.23) 54.8%, transparent 55%); }
-.sun { position: absolute; top: 48px; right: 52px; width: 132px; height: 132px; border-radius: 50%; background: var(--yellow); }
-.art-label { position: absolute; top: 46px; left: 43px; color: var(--ink); font: 700 2.1rem/.86 var(--serif); letter-spacing: -.07em; }
+.hero-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.image-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13, 48, 40, .34) 0%, rgba(13, 48, 40, .04) 42%, rgba(13, 48, 40, .58) 100%); }
+.art-label { position: absolute; top: 46px; left: 43px; color: var(--paper); font: 700 2.1rem/.86 var(--serif); letter-spacing: -.07em; }
 .art-label span { font: 500 .62rem var(--sans); letter-spacing: .16em; text-transform: uppercase; }
-.art-path { position: absolute; left: 21%; bottom: -30%; width: 65%; height: 76%; border-radius: 50% 50% 0 0; border: 36px solid var(--coral); border-bottom: 0; transform: rotate(18deg); opacity: .95; }
-.art-path::after { content: ''; position: absolute; top: 17%; left: 28%; width: 47%; height: 7px; background: var(--ink); transform: rotate(-13deg); }
-.art-note { position: absolute; color: var(--ink); font-size: .7rem; font-weight: 700; line-height: 1.1; text-transform: uppercase; }
-.note-one { right: 44px; bottom: 91px; }
-.note-two { left: 43px; bottom: 55px; }
-.art-stamp { position: absolute; right: 42px; top: 238px; display: grid; place-items: center; width: 92px; height: 92px; border: 1px solid var(--ink); border-radius: 50%; text-align: center; font-size: .55rem; font-weight: 700; line-height: 1.2; text-transform: uppercase; transform: rotate(12deg); }
+.art-stamp { position: absolute; right: 42px; top: 238px; display: grid; place-items: center; width: 92px; height: 92px; border: 1px solid var(--paper); border-radius: 50%; color: var(--paper); text-align: center; font-size: .55rem; font-weight: 700; line-height: 1.2; text-transform: uppercase; transform: rotate(12deg); }
 .art-card { position: absolute; left: 40px; bottom: 38px; z-index: 2; display: grid; grid-template-columns: auto auto; column-gap: 8px; align-items: end; padding: 13px 16px; background: var(--paper); color: var(--ink); box-shadow: 8px 8px 0 rgba(20, 60, 50, .13); }
 .art-card span { grid-column: 1 / -1; color: var(--coral); font-size: .55rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .art-card strong { font: 700 2.5rem/.9 var(--serif); letter-spacing: -.08em; }
 .art-card small { color: var(--muted); font-size: .56rem; line-height: 1.1; }
-.art-ground { position: absolute; right: -10%; bottom: -30%; width: 125%; height: 54%; border-radius: 50% 50% 0 0; background: rgba(255,255,255,.23); transform: rotate(-7deg); }
+.image-caption { position: absolute; right: 42px; bottom: 39px; color: var(--paper); font-size: .63rem; font-weight: 700; line-height: 1.25; text-align: right; text-transform: uppercase; }
 
 .details { max-width: 1240px; margin: 0 auto; padding: 86px 5vw 103px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1.2fr; gap: 8vw; }
 h2 { margin-bottom: 0; font-size: clamp(2.8rem, 4vw, 4.4rem); }
@@ -106,10 +101,10 @@ h2 { margin-bottom: 0; font-size: clamp(2.8rem, 4vw, 4.4rem); }
   .hero { display: flex; flex-direction: column; align-items: stretch; gap: 52px; padding-top: 55px; padding-bottom: 76px; }
   h1 { font-size: clamp(3.35rem, 15vw, 5rem); }
   .hero-art { height: 360px; }
-  .sun { top: 30px; right: 30px; width: 92px; height: 92px; }
   .art-label { top: 30px; left: 30px; font-size: 1.7rem; }
   .art-stamp { top: 170px; right: 28px; width: 78px; height: 78px; }
   .art-card { left: 28px; bottom: 25px; }
+  .image-caption { right: 28px; bottom: 27px; }
   .note-one { right: 27px; bottom: 54px; }
   .note-two { left: 28px; bottom: 31px; }
   .details, .signup { display: block; padding-top: 68px; padding-bottom: 70px; }
